@@ -15,3 +15,5 @@
    "For this DESTINATION, send traffic to this TARGET"
    → destination_cidr_block
    → target (igw / nat / etc.)
+
+ec2(public) --> public subnet --> route table association --> route table --> route --> 0.0.0.0/0 -> igw
